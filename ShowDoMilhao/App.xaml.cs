@@ -1,4 +1,5 @@
-﻿using ShowDoMilhao.Models;
+﻿using MetalPerformanceShadersGraph;
+using ShowDoMilhao.Models;
 
 namespace ShowDoMilhao
 {
@@ -850,6 +851,20 @@ namespace ShowDoMilhao
     }
 };
 
+        Pergunta pergunta_sorteada;
+
+        While (true)
+        {
+            int sorteado = r.Next(1, 20);
+
+            pergunta_sorteada = perguntas_faceis[sorteado];
+
+            if (!perguntas_sorteadas.Contains(pergunta_sorteada))
+            {
+                perguntas_sorteadas.Add(pergunta_sorteada);
+                break;
+            }
+        }
         public static Pergunta getRandomPerguntaFacil()
         {
             Random r = new Random();

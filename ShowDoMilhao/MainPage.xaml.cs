@@ -2,8 +2,17 @@
 {
     public partial class MainPage : ContentPage
     {
+        double premio = 1000;
+        int pergunta_count = 1;
         public MainPage()
         {
+            InitializeComponent();
+
+            this.BindingContext = App.getRandomPerguntaFacil();
+
+            lbl_nivel.Text = "Fácil";
+            lbl_premio.Text = premio.ToString("C");
+            lbl_pergunta_numero.Text = pergunta_count.ToString();
         }
 
         
