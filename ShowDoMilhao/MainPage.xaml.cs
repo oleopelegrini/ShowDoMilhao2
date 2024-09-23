@@ -68,6 +68,58 @@
                 this.BindingContext = App.getRandomPerguntaFacil();
             }
 
-            } else
-        {
+            private void toca_som()
+            {
+                string track = "";
+                switch (pergunta_count)
+                {
+                    case 1:
+                        track = "1000.nav";
+                        break;
+                    case 2:
+                        track = "2000.nav";
+                        break;
+                    case 3:
+                        track = "3000.nav";
+                        break;
+                    case 4:
+                        track = "4000.nav";
+                        break;
+                    case 5:
+                        track = "5000.nav";
+                        break;
+                    case 6:
+                        track = "10000.nav";
+                        break;
+                    case 7:
+                        track = "20000.nav";
+                        break;
+                    case 8:
+                        track = "30000.nav";
+                        break;
+                    case 9:
+                        track = "40000.nav";
+                        break;
+                    case 10:
+                        track = "50000.nav";
+                        break;
+                    case 11:
+                        track = "100000.nav";
+                        break;
+                    case 12:
+                        track = "200000.nav";
+                        break;
+                    case 13:
+                        track = "300000.nav";
+                        break;
+                    case 14:
+                        track = "400000.nav";
+                        break;
+                    case 15:
+                        track = "500000.nav";
+                        break;
+                }
+            }
+
+            } if ()
 
